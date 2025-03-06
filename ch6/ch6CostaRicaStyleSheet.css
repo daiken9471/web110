@@ -1,0 +1,93 @@
+/*David Aiken styles for my box model webpage*/
+
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header{
+    color: white;
+    text-align: center; 
+    background: blue;
+    background: linear-gradient(rgb(0, 255, 238), rgb(247, 235, 15), rgb(216, 80, 228));
+    padding: 3rem 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.5rem solid goldenrod;
+}
+
+nav{
+    background-color: rgb(28, 184, 179);
+    margin: 0 2rem 2rem 2rem;
+    padding: 1.5rem;
+    border: 0.2rem;
+    color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a:hover{
+    color:yellow;
+    text-decoration:double;
+}
+
+main{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section{
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border: 0.2rem solid greenyellow;
+}
+
+section h2{
+    color:aquamarine
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border: 0.2rem solid plum;
+    text-shadow: 5px 8px rgb(255, 209, 84);
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+img{
+    max-width: 50%;
+    height: auto;
+    margin: 1rem;
+    border: 0.2rem solid peachpuff;
+    padding: 0.3rem;
+    border-radius: 20%;
+}
+
+footer{
+    background-color:rgb(247, 235, 15);
+    text-align: center;
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    border-top: 0.5rem;
+    
+}
+
