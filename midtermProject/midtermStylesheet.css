@@ -1,18 +1,14 @@
 *{margin:0; padding:0; box-sizing: border-box;}
 
-header{
-    background-color: #0066b1;
-    text-align: center;
+header{ }
+
+body, html{
+    height: 100%;
 }
 
-body{
-    background-color: lightskyblue;
-    text-align: center;
-}
+body{}
 
-nav{
-    background-color: #003358;
-}
+nav{padding: 3rem 0rem 0rem 0rem}
 
 nav ul{
     list-style-type: none;
@@ -22,41 +18,96 @@ nav ul{
 }
 
 nav a{
-    color:#fff773
+    color:blue
 }
 
 nav a:hover{}
 
-h1{color:#fff773}
+h1{text-align: center;
+padding: 0rem 0rem 1rem 0rem}
 
-h2{}
+h2{text-align: center;
+}
 
-h3{}
+h3{text-align: center;
+}
 
-h4{}
+h4{text-align: center;
+}
 
-p{color:#fff773}
+p{text-align: center;
+    padding:1rem;
+}
 
-dt{
+dl{
+    color:navy
+}
+
+dt{text-align: center;
+    margin: 4rem 0rem 0rem 0rem;
     font-size: 2rem;
-    padding: 1rem;
+    
+}
+
+dd{
+    text-align: center;
+    margin: 0rem 30rem
+}
+
+li{
+    text-align: center;
+    padding: 0.5rem;
+    font-style: italic;
+    
+    
 }
 
 
-main{}
+main{
+    
+   
+}
 
 
-img{width: 30%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
+img{
 }
 
 
 footer{
-        background-color: #0066b1;
         text-align: center;
-        padding: 1.5rem 0;
-        margin: 3rem
+        
     }
+
+.navyText{color: navy}
+
+
+.indexBackground{
+    background-image: url("pixelPC.avif"); 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 55% 99%;
+    background-position: center;
+}
+
+.resumeBackground{
+    background-image: url("treesFramingCenter.avif"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.midtermThirdPageBackground{
+    background-image: url("pixelParkBench.jpg"); 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.indexPadding{
+    padding: 10rem 40rem;
+}
 
