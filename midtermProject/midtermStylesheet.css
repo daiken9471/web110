@@ -1,85 +1,94 @@
 *{margin:0; padding:0; box-sizing: border-box;}
 
-header{ }
+header{}
 
 body, html{
     height: 100%;
 }
 
-body{}
+body{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;}
 
-nav{padding: 3rem 0rem 0rem 0rem}
+nav{
+    padding: 1rem 0rem 0rem 0rem}
 
 nav ul{
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 3rem;
-}
+    gap: 3rem;}
 
 nav a{
-    color:blue
-}
+    color:blue}
 
-nav a:hover{}
+nav a:hover{
+    color: purple;}
 
 h1{text-align: center;
-padding: 0rem 0rem 1rem 0rem}
-
-h2{text-align: center;
 }
 
-h3{text-align: center;
-}
+h2{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;}
 
-h4{text-align: center;
-}
+h3{
+    text-align: center;}
 
-p{text-align: center;
-    padding:1rem;
-}
+h4{
+    text-align: center;}
+
+p{
+    text-align: center;}
 
 dl{
-    color:navy
-}
+    color:navy;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;}
 
 dt{text-align: center;
     margin: 4rem 0rem 0rem 0rem;
-    font-size: 2rem;
-    
-}
+    font-size: 2rem;}
 
 dd{
     text-align: center;
-    margin: 0rem 30rem
-}
+    margin: 0rem 25rem}
 
 li{
     text-align: center;
     padding: 0.5rem;
-    font-style: italic;
-    
-    
-}
+    font-style: italic;}
 
 
-main{
-    
-   
-}
+main{text-align: center;
+    padding:5rem;}
 
 
 img{
-}
+    max-width: 50%;
+    height: auto;
+    margin: 1rem;
+    /*border: 0.2rem solid rgb(163, 249, 245);*/
+    /*I can't decide if the border looks dumb or not*/
+    padding: 0.3rem;
+    border-radius: 20%;}
 
 
 footer{
-        text-align: center;
-        
-    }
+    text-align: center;
+    padding: 5rem 0rem 5rem 0rem}
 
-.navyText{color: navy}
+/*this is my only comment about styles because I think I named them sensibly enough to tell what they are*/
 
+.navyText{
+    color: navy}
 
 .indexBackground{
     background-image: url("pixelPC.avif"); 
@@ -87,16 +96,14 @@ footer{
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: 55% 99%;
-    background-position: center;
-}
+    background-position: center;}
 
 .resumeBackground{
     background-image: url("treesFramingCenter.avif"); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-position: center;
-}
+    background-position: center;}
 
 .midtermThirdPageBackground{
     background-image: url("pixelParkBench.jpg"); 
@@ -104,10 +111,8 @@ footer{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-position: center;
-}
+    background-position: center;}
 
 .indexPadding{
-    padding: 10rem 40rem;
-}
+    padding: 2.5rem 0rem 0rem 0rem;}
 
