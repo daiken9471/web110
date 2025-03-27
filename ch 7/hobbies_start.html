@@ -1,0 +1,171 @@
+<!--Allison Hanna 3/20/24-->
+<!-- Ch. 7 Floats-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hobbies</title>
+    <meta charset="utf-8" />
+
+    <style>
+      /* Reset the browser defaults for the whole page */
+      * {
+        box-sizing: border-box;
+        padding:0rem;
+        margin: 0rem;
+      }
+
+      h1{
+        text-align: center;
+        color: lightseagreen;
+        font-size: 2rem;
+      }
+      
+      /* Element styles */
+      h2 {
+        padding-left: 10px;
+        color: slategrey;
+        font-size: 2em;
+        text-align: center;
+      }
+      /* Create two equal columns that floats next to each other */
+    section{
+      float:left;
+      width: 50%;
+      padding: 10px;
+    }
+
+
+
+      /* Clear floats after the columns */
+      main:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Image styles */
+      img{
+        height: 70%;
+        max-width: 70%;
+        opacity: 0.7;
+      }
+
+      img:hover{
+        border: 1px solid gold;
+        transform: scale(1.2);
+        transition: transform 0.5s ease-in-out
+
+      }
+   
+
+
+
+
+       /* Footer the structures the bottom bar */
+      footer {
+        text-align: center;
+        color:bisque;
+        font-size: 3rem;
+        border: 5px yellow;
+        border-style: groove;
+        padding: 1rem;
+        margin: 1rem;
+      }
+
+      /* Class styles */
+      .description{
+        margin: 10px;
+        text-align:center;
+        color: red;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+      }
+    
+
+
+
+      .heading{
+        text-align: center;
+      }
+
+
+
+
+            /* Wrapper that structures the whole page */
+      /*ID styles */
+     #wrapper{
+      width: 90%;
+      margin:auto;
+      background: lightblue;
+      box-shadow: 3px 5px peachpuff;
+      border: 2px solid slategray;
+      border-radius: 15px
+     }
+
+
+
+      /*Link styles*/
+      nav {
+        border: 2px solid slategrey;
+        background-color: #ececd8;
+        font-weight: bold;
+        text-align: center;
+        font-size: 120%;
+              }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+        font-size: 1.2em;
+      }
+      nav li {
+        display: inline; /*inline is horizontal and block is vertical*/
+        padding: 10px;
+      }
+      nav a {
+        text-decoration: none;
+      }
+      nav a:link {
+        color: #0194b5;
+      }
+      nav a:visited {
+        color: #2d0540;
+      }
+      nav a:hover {
+        color: #c6d02f;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+       <h1>Things I like</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Exploring KC Trails</a></li>|
+          <li><a href="zoo.html">The Zoo</a></li>
+          
+        </ul>
+      </nav>
+
+      <main>
+        <h2>Two Things I like to do</h2>
+
+        <section>
+          <img src="massEffectGalaxy.webp" alt="video game galaxy"> <!--Put your first image here-->
+          <p class="description">exploring new worlds using my xbox is pretty cool<!-- Say something about your hobby here--></p>
+        </section>
+
+        <section>
+          <img src="backyardGarden.jpg" alt="garden"><!--Put your first image here-->
+          <p class="description">this is the hobby I picked up during covid and I've continued to do it every year since.<!-- Say something about your hobby here--></p>
+        </section>
+      </main>
+      <footer>
+        <h5>Copyright &copy; 2024 Allison Hanna but later updated in class by David Aiken</h5>
+      </footer>
+    </div>
+  </body>
+</html>
