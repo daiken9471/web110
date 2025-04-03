@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef and Broccoli</title>
+    <style>
+      
+        * {
+            box-sizing: border-box;
+        }
+
+     /* ID styles */
+
+        #wrapper{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
+        /*Element Styles */
+
+        body {
+            display: flex;
+            flex-direction: column;
+            max-width:100%;
+            margin: 0;
+            background: linear-gradient(to right,#155839 50%, #362707); 
+        }
+
+        header {
+            padding: 1em;
+            text-align: center;
+            color:#fff;
+        }
+
+        img{
+            justify-content: flex-start;
+          
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+            background-color: #f0f0f0;
+        }
+        nav {
+            background: #858886;
+            padding: 1em;
+            width: 200px;
+            flex-shrink: 0;
+        }
+    
+        article {
+            padding: 1em;
+            flex-grow: 1;
+           
+        }
+        footer {
+            background: #377540;
+            padding: 1em;
+            text-align: center;
+        }
+      
+         /*Class styles */
+         
+         .details{
+            color:#e96010;
+            font-weight:bold;
+            font-family:Arial, sans-serif;
+         }
+       
+        /*Compound styles are below */
+
+        /* Additional styling for content */
+        article img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1em 0 1em 0; /* Changed margin to left-align */
+        }
+        nav a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: black;
+          border-bottom: 1px solid #f0f0f0;
+          text-align: center;
+        }
+       
+        @media (max-width: 700px) {
+            main {
+                flex-direction: column;
+            }
+            nav {
+                width: 100%;
+            }
+            article {
+                flex-direction: column;
+                flex-grow: 1;
+                        }
+         }
+    </style>
+</head>
+<body>
+    <div id="wrapper"> 
+    <header>
+        <h1> Beef and Broccoli in 30 minutes</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="#recipe">Recipe</a>
+            <a href="#nutrition">Nutrition</a>
+    
+        </nav>
+        <article>
+            <section >
+                <h2>Ingredient List</h2>
+                <img src="ingredients.jpg" alt="Ingredients for dish">
+                <p class="details"><ul>
+                    <li><strong>Ingredients:</strong>
+                      <ul>
+                        <li>1 pound flank steak</li>
+                        <li>2 tablespoons olive oil, divided</li>
+                        <li>3-4 cups broccoli florets (see note)</li>
+                      </ul>
+                    </li>
+                    <li><strong>Sauce Ingredients:</strong>
+                      <ul>
+                        <li>1/2 cup low-sodium soy sauce</li>
+                        <li>1/2 cup water</li>
+                        <li>1/2 teaspoon apple cider vinegar or rice vinegar</li>
+                        <li>1/2 teaspoon toasted sesame oil (see note)</li>
+                        <li>1/4 cup (packed) brown sugar</li>
+                        <li>3 tablespoons cornstarch</li>
+                        <li>1 teaspoon grated fresh ginger</li>
+                        <li>4 cloves garlic, minced</li>
+                        <li>1/4 teaspoon crushed red pepper flakes, or more to taste</li>
+                      </ul>
+                    </li>
+                  </ul></p>
+            </section>
+
+            <section>
+                <h2>Prepare and cook the beef</h2>
+                <img src="beefonly.jpg" alt="Beef">
+                <p class="details">Cut beef into thin strips or cubes. Marinate the beef with soy sauce, cornstarch, and a touch of ginger and garlic (optional) for about 15-30 minutes.
+                    Heat oil in a wok or large skillet over high heat. Stir-fry the beef until browned and cooked through.   Remove the beef from the wok and set aside.</p>
+            </section>
+   
+            <section">
+                <h2>Prepare the broccoli</h2>
+                <img src="beef-and-broccoli.jpg" alt="Easter Eggs">
+                <p class="details">Add a little more oil to the wok or skillet. Add broccoli florets and stir-fry until tender-crisp.
+                    Remove the broccoli from the wok and set aside.</p>
+            </section>
+            <section >
+                <h2>Combine and create the sauce</h2>
+                <img src="sauce.jpg" alt="Sauce">
+                <p class="details">Return the beef to the wok or skillet.
+                    Add the broccoli back in.
+                    Prepare a sauce with soy sauce, oyster sauce (optional), cornstarch slurry, and a touch of sesame oil.
+                    Pour the sauce over the beef and broccoli and stir-fry until the sauce thickens.
+                    Serve hot over rice or noodles. </p>
+            </section>
+
+       
+    </main>
+    <footer>
+        <p>&copy; 2025 Allison Hanna</p>
+    </footer>
+    </div>
+</body>
+</html>
