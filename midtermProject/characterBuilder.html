@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="midtermStylesheet.css">
+    <title>Character Builder</title>
+</head>
+
+<body>
+    <div class="characterBuilderBackground">
+
+    <header>
+        <div class="whiteText"><h1>D&D Mondays</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Portfolio Home</a></li>
+            <li><a href="resume.html">David's Resume</a></li>
+            <li><a href="midtermThridPage.html">About Me</a></li>   
+            <li><a href="finalFourthPage.html">Page 4</a></li>
+            <li><a href="finalFifthPage.html">Page 5</a></li>
+        </ul>      
+    </nav>
+
+    <main>
+        <h2>If you're interested in joining, just build and submit a sample character.</h2>
+        <br>
+
+        <form action="submissionDestination.whereever" method="POST">
+            <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="where can we reach you?" required>
+            </div>
+            <br>
+            <p>Okay, let's get some character details.</p>
+            <br>
+            <div>
+                <label for="firstname">first name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+            </div>
+            <br>
+            <div>
+
+                <label for="lastname">last name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="last name"> 
+            </div>
+            <br>
+            <div>
+                <label for="title">Title:</label>
+
+                <label for="Lady">Lady</label>
+                <input type="radio" id="Lady" name="title" value="Lady">
+
+                <label for="Lord">Lord</label>
+                <input type="radio" id="Lord" name="title" value="Lord">
+            </div>
+            <br>
+            <div>
+                <label for="quantity">Starting Gold:</label>  
+                <input type="number" id="quantity" name="quantity" min="0" max="1500" value="1" required>
+            </div>
+            <br>
+            <div>
+                <label for="race">Race:</label>
+                <select id="race" name="race" required>
+                    <option value="dragonborn">Dragonborn</option>
+                    <option value="dwarf">Dwarf</option>
+                    <option value="elf">Elf</option>
+                    <option value="gnome">Gnome</option>
+                    <option value="halfling">Halfling</option>
+                    <option value="human">Human</option>
+                    <option value="orc">Orc</option>
+                    <option value="tiefling">Tiefling</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="class">Class:</label>
+                <select id="class" name="class" required>
+                    <option value="artificer">Artificer</option>
+                    <option value="barbarian">Barbarian</option>
+                    <option value="bard">Bard</option>
+                    <option value="cleric">Cleric</option>
+                    <option value="druid">Druid</option>
+                    <option value="fighter">Fighter</option>
+                    <option value="monk">Monk</option>
+                    <option value="paladin">Paladin</option>
+                    <option value="ranger">Ranger</option>
+                    <option value="rogue">Rogue</option>
+                    <option value="sorcerer">Sorcerer</option>
+                    <option value="warlock">Warlock</option>
+                    <option value="wizard">Wizard</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="armor">Armor Type:</label>
+                <select id="armor" name="armor" required>
+                    <option value="none">None</option>
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="heavy">Heavy</option>
+                </select>
+            </div>          
+            <br>
+            <div>
+                <label for="weapon">Weapon Type:</label>
+                <select id="weapon" name="weapon" required>
+                    <option value="1H">1 Handed</option>
+                    <option value="1H+S">1 Hand and Shield</option>
+                    <option value="2H">2 Handed</option>
+                    <option value="dualweild">Dual Weild</option>
+                    <option value="none">None: My incisive wit will dismantle all foes</option>
+                    <option value="other">Other: please consult your DM</option>
+                </select>
+            </div> 
+            <br>
+            <div>
+                <label for="checkbox">Check this box please:</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </div>
+            
+            
+            <div>
+                <input type="reset">
+                <input type="submit">
+            </div>
+        </form>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
