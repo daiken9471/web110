@@ -1,0 +1,189 @@
+<!--This page got a dedicated Style because I tried to set it up very different from the other pages. I felt like the main style sheet used by the other pages would be a bloated mess if I added all this. While I am capable of copy/pasting it all to the main style sheet, it seemed unnecessary since nothing here is shared among the other pages.
+If i'd had this Gym idea sooner I would have made it my whole project with links to the different membership plans to collect user info in a form or a calender to schedule a duel with the gym leader. I didn't think it was smart to redo the whole thing the day before it was due so now you get the variety of 3 different pages.-->
+
+<!--Thanks for everything. Have a great summer.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="midtermStylesheet.css">
+    <title>5th page</title>
+</head>
+
+<style>
+
+.gym-container {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'nav nav nav'
+        'banner banner banner'
+        'free blaze inferno'
+        'banner banner banner'
+        'featured featured featured'
+        'footer footer footer';
+    gap: 10px;
+    padding: 10px;}
+
+.gym-container > div {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.gymheader {
+    grid-area: header;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.nav{}
+
+.free{
+    grid-area: free;
+    background-color: orange;
+    transition: 0.5s;
+    border: 10px solid yellow;
+    border-radius: 25%;}
+.free > h4{
+    padding: 1rem;
+    text-align: center;}
+.free > p{
+    text-align: center;
+    margin-bottom: 1rem;}
+.free:hover{
+    transform: scale(1.1)}
+
+.blaze{
+    grid-area: blaze;
+    background-color: orange;
+    transition: 0.5s;
+    border: 10px solid red;
+    border-radius: 25%;}
+.blaze > h4{
+    padding: 1rem;
+    text-align: center;}
+.blaze > p{
+    text-align: center;
+    margin-bottom: 1rem;}
+.blaze:hover{
+    transform: scale(1.1)}
+
+.inferno{
+    grid-area: inferno;
+    background-color: orange;
+    transition: 0.5s;
+    border: 10px solid black;
+    border-radius: 25%;}
+.inferno > h4{
+    padding: 1rem;
+    text-align: center;}
+.inferno > p{
+    text-align: center;
+    margin-bottom: 1rem;}
+.inferno:hover{
+    transform: scale(1.1)}
+
+.featured{
+    grid-area: featured;
+    transition: 0.5s;}
+.featured:hover{
+    transform: scale(1.1)
+}
+
+@media only screen and (max-width: 800px) {
+  .gymheader {grid-area: 1 / span 3;}
+  .free {grid-area: 2 / span 1;}
+  .blaze{grid-area: 3 / span 1;}
+  .inferno {grid-area: 4 / span 1;}
+  .featured{grid-area: 5 / span 3;}
+  .footer {grid-area: 6 / span 3;}}
+@media only screen and (min-width: 800px) {
+  .gymheader {grid-area: 1 / span 3;}
+  .nav{grid-area: 2 / span 3;}
+  .gymbanner{grid-area: 3 / span 3;}
+  .free {grid-area: 4 / span 1;}
+  .blaze {grid-area: 4 / span 1;}
+  .inferno {grid-area: 4 / span 1;}
+  .featured{grid-area: 5 / span 3;}
+  .footer {grid-area: 6 / span 3;}}
+
+</style>
+
+<body>
+    <div class="gymBackground">
+    <header>
+        <div class="gymheader">
+            <h1>Cinnabar Gym</h1>
+        </div>
+    </header>
+
+    <div class="nav">
+        <nav>
+            <ul>
+                <div class="navContainer">
+                <li><a href="index.html">Portfolio Home</a></li>
+                <li><a href="resume.html">David's Resume</a></li>
+                <li><a href="midtermThridPage.html">About Me</a></li>   
+                <li><a href="finalFourthPage.html">Page 4</a></li>
+                <li><a href="characterBuilder.html">character builder</a></li>
+            </div>
+            </ul>      
+        </nav>
+    </div>
+
+    <main>
+        <div class="gym-container">
+        
+            <div class="gymbanner">
+                <h2>Join today for free and Blaze a new trail together with your favorite fire-type Pokemon.</h2>
+                <br>
+                <h2>Checkout out our additional offers:</h2>
+            </div>
+            
+
+            <div class="free">
+                <h4>FREE</h4>
+                <p>Our doors are always open to anyone whose trying to grow their skills as a Pokemon trainer.</p>
+                <p>We have fire-type specialized staff on site 24/7 to help you and your Pokemon burn your brightest.</p>
+            </div>
+
+            <div class="blaze">
+                <h4>Blaze Plan</h4>
+                <p>If you pledge to try your hardest to be the very best like no one ever, you'll reveice accress to:</p>
+                <p>Weekly 30 minute one-on-one sessions with a member of our staff.</p>
+                <p>Unlimited access to our elixer fountain to keep those Power Points ful so you can keep training.</p>
+                <p>On site Nurse Joy will always have a Burn Heal ready when needed.</p>
+            </div>
+
+            <div class="inferno">
+                <h4>Inferno Plan</h4>
+                <p>If you pledge to join us for our weekly community service outings you also receive:</p>
+                <p>A monthly one-on-one session with our gym's leader, the Hotheaded Quiz Master himself, Blaine.</p>
+            </div>
+
+            
+
+            <div class="featured">
+                <h2>Want to ignite your knowledge about some of Blaine's favorite Pokemon? Click on them to visit their Wiki.</h2>
+                <br>
+                <a href="https://pokemon.fandom.com/wiki/Arcanine"><img src="Arcanine.webp" alt="Arcanine" style="width:100px;height:100px;"></a>
+                <a href="https://pokemon.fandom.com/wiki/Ponyta"><img src="ponyta.webp" alt="Ponyta" style="width:100px;height:100px;"></a>
+                <a href="https://pokemon.fandom.com/wiki/Growlithe"><img src="growlithe.webp" alt="growlithe" style="width:100px;height:100px;"></a>
+                <a href="https://pokemon.fandom.com/wiki/Rapidash"><img src="Rapidash.webp" alt="rapidash" style="width:100px;height:100px;"></a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>Visit Anytime!</h2>
+        <h2>Gym Leader challenges available upon request.</h2>
+    </footer>
+
+
+
+</div>
+</body>
+</html>
